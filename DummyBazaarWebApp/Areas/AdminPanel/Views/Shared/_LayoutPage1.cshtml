@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link href="~/Areas/AdminPanel/Assets/Css/AdminLayout.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="topbar DummyColorsBg-1">
+        <a href="#" class="cikis DummyColors-5">Çıkış</a>
+    </div>
+    <nav class="sidebar DummyColorsBg-4">
+        <div class="container DummyColorsBg-3 DummyColors-5" style="margin-top: 40px !important; padding:30px 20px;">
+            <label>Merhaba <strong>Kullanıcı</strong></label><br />
+            <a href="#" class="DummyColors-5">Profil</a>  <a href="#" class="DummyColors-5">Ayarlar</a>
+        </div>
+        <div class="container">
+
+        </div>
+    </nav>
+    <div class="main">
+        @RenderBody()
+    </div>
+</body>
+</html>

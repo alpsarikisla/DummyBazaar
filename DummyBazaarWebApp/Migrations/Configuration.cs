@@ -17,6 +17,8 @@
         {
             context.ManagerTypes.AddOrUpdate(m => m.ID, new Models.ManagerType() { ID = 1, Name = "Admin" });
             context.ManagerTypes.AddOrUpdate(m => m.ID, new Models.ManagerType() { ID = 2, Name = "Moderatör" });
+
+            context.Managers.AddOrUpdate(m => m.ID, new Models.Manager() { ID = 1, Name = "Alp", Surname="Sarıkışla", Mail="a.sarikisla@veksis.com", ManagerType_ID = 1, Password="1234", UserName="a.sarikisla", IsActive=true });
         }
     }
 }
