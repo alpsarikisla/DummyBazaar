@@ -268,6 +268,10 @@ h6 {
     float:left;
     padding:10px 20px;
 }
+.userpanel {
+    margin-top: 40px;
+    padding: 30px 20px;
+}
 .container
 {
     padding:0.01em 16px;
