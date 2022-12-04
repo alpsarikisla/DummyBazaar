@@ -1,0 +1,35 @@
+﻿@model DummyBazaarWebApp.Models.Category
+@{
+    ViewBag.Title = "Kategori Ekle";
+    Layout = "~/Areas/AdminPanel/Views/Shared/_LayoutPage1.cshtml";
+}
+
+<div class="form">
+    <div class="formtitle">
+        <h3>Kategori Ekle</h3>
+        @*@ViewBag.suleyman*@
+    </div>
+    <div class="formcontent">
+        @using (Html.BeginForm())
+        {
+            @Html.AntiForgeryToken();
+            <div>
+                @Html.LabelFor(model=> model.Name)
+                <br />
+                @Html.EditorFor(model => model.Name)
+                <br />
+                @Html.ValidationMessageFor(model => model.Name)
+            </div>
+            <div>
+                @Html.LabelFor(model => model.Description)
+                <br />
+                @Html.EditorFor(model => model.Description)
+                <br />
+                @Html.ValidationMessageFor(model => model.Description)
+            </div>
+            <div>
+                <input type="submit" value="Kategori Ekle" />
+            </div>
+        }
+    </div>
+</div>

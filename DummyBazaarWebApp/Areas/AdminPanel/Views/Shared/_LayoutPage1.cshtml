@@ -3,23 +3,30 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
-    <title>@ViewBag.Title</title>
+    <title>Dummy Bazaar - @ViewBag.Title</title>
     <link href="~/Areas/AdminPanel/Assets/Css/AdminLayout.css" rel="stylesheet" />
+    <link href="~/Areas/AdminPanel/Assets/Css/FormDesign.css" rel="stylesheet" />
 </head>
 <body>
     <div class="topbar DummyColorsBg-1">
         <a href="#" class="cikis DummyColors-5">Çıkış</a>
     </div>
     <nav class="sidebar DummyColorsBg-4">
-        <div class="userpanel DummyColorsBg-3 DummyColors-5" >
+        <div class="userpanel DummyColorsBg-3 DummyColors-5">
             <label>Merhaba <strong>Kullanıcı</strong></label><br />
-            <a href="#" class="DummyColors-5">Profil</a>  <a href="#" class="DummyColors-5">Ayarlar</a>
+            <a href="#" class="DummyColors-5">Profil</a>  
+            <a href="#" class="DummyColors-5">Ayarlar</a>
         </div>
         <div class="container DummyColors-3" style="background-color:white">
             <h3>Yönetici Paneli</h3>
         </div>
-        <div class="container">
-
+        <div>
+            <ul class="sidebarMenu">
+                <a href="@Url.Action("Index","Category")">
+                <li>Kategori İşlemleri</li></a>
+                <a href="@Url.Action("Index","Product")">
+                <li>Ürün İşlemleri</li></a>
+            </ul>
         </div>
     </nav>
     <div class="main">

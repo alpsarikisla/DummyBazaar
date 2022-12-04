@@ -1,0 +1,77 @@
+﻿.form {
+    border: 1px solid silver;
+    font-family: Calibri;
+    width: 100%;
+}
+
+    .form .formtitle {
+        background-color: #e8e8e8;
+        padding: 10px;
+        color: gray;
+        display: block;
+    }
+
+    .form .formcontent {
+        padding: 15px;
+    }
+
+    .form input[type="text"] {
+        width: 90%;
+        padding: 7px;
+        border-radius: 3px;
+        border: 1px solid silver;
+    }
+    .form .DropDown {
+        width: 90%;
+        padding: 7px;
+        border-radius: 3px;
+        border: 1px solid silver;
+    }
+    .form textarea {
+        width: 90%;
+        padding: 7px;
+        border-radius: 3px;
+        border: 1px solid silver;
+    }
+
+    .form input[type="submit"] {
+        background-color: #1b2838;
+        color: white;
+        padding: 7px 25px;
+        text-align: center;
+        font-weight: 900;
+        border: 1px solid #025151;
+        border-radius: 5px;
+        margin-top: 10px;
+    }
+
+        .form input[type="submit"]:hover {
+            background-color: #2a475e;
+            cursor: pointer;
+        }
+
+.liste {
+    border: 1px solid silver;
+    width: 100%;
+}
+
+    .liste tr th {
+        background-color: #ededed;
+        padding: 7px;
+        border: 1px solid silver;
+    }
+
+    .liste tr td {
+        border:1px solid silver;
+        padding: 7px;
+    }
+.pagetitle{
+    padding:20px;
+    border-bottom:1px solid Silver;
+    margin-bottom:20px;
+    color:dimgrey
+}
+.pagetitle h3 small
+{
+    font-weight:100;
+}

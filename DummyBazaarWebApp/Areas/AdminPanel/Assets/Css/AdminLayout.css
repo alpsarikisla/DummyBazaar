@@ -5,10 +5,12 @@
 *, *:before, *:after {
     box-sizing: inherit
 }
-*,h1,h2,h3,h4,h5,h6
-{
-    margin:0; padding:0;
+
+*, h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
 }
+
 html {
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%
@@ -45,7 +47,7 @@ audio:not([controls]) {
 
 a {
     background-color: transparent;
-    text-decoration:none;
+    text-decoration: none;
 }
 
     a:active, a:hover {
@@ -216,18 +218,23 @@ h6 {
 .DummyColors-1 {
     color: #171a21;
 }
+
 .DummyColors-2 {
     color: #66c0f4;
 }
+
 .DummyColors-3 {
     color: #1b2838;
 }
+
 .DummyColors-4 {
     color: #2a475e;
 }
+
 .DummyColors-5 {
     color: #c7d5e0;
 }
+
 .DummyColorsBg-1 {
     background-color: #171a21;
 }
@@ -247,33 +254,62 @@ h6 {
 .DummyColorsBg-5 {
     background-color: #c7d5e0;
 }
-.topbar{
-    top:0px;
-    width:100%;
-    position:fixed;
+
+.topbar {
+    top: 0px;
+    width: 100%;
+    position: fixed;
 }
+
 .cikis {
     padding: 8px 16px;
     float: right;
 }
-.sidebar {
 
-    width: 300px;
+.sidebar {
+    width: 15%;
     height: 1000px;
     float: left;
 }
-.main
-{
-    margin-top:40px;
-    float:left;
-    padding:10px 20px;
+
+.main {
+    margin-top: 40px;
+    float: left;
+    padding: 10px 20px;
+    width: 85%;
 }
+
 .userpanel {
     margin-top: 40px;
     padding: 30px 20px;
 }
-.container
-{
-    padding:0.01em 16px;
+
+.container {
+    padding: 0.01em 16px;
 }
 
+.sidebarMenu {
+    list-style-type: none;
+    margin-top:20px;
+}
+    .sidebarMenu a li {
+        padding: 7px;
+        background-color: #1b2838;
+        border-bottom: 1px solid #171a21
+    }
+        .sidebarMenu a li:hover {
+            background-color: #29415f;
+        }
+        .sidebarMenu a {
+            text-decoration: none;
+            color: white;
+        }
+.createButton {
+    background-color: #1b2838;
+    color: white;
+    padding: 7px 25px;
+    text-align: center;
+    font-weight: 900;
+    border: 1px solid #025151;
+    border-radius: 5px;
+}
