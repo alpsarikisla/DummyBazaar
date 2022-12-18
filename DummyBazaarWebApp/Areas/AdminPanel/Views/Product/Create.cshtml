@@ -8,7 +8,12 @@
         <h3>Ürün Ekle</h3>
     </div>
     <div class="formcontent">
-        @using (Html.BeginForm())
+        @if (ViewBag.message != null)
+        {
+            @ViewBag.message
+        }
+
+        @using (Html.BeginForm("Create", "Product", FormMethod.Post, new { enctype="multipart/form-data" }))
         {
             @Html.AntiForgeryToken();
             <div>
@@ -21,7 +26,7 @@
             <div>
                 <label>Kategori Seçiniz:</label>
                 <br />
-                @Html.DropDownList("Category_ID",null, htmlAttributes:new {@class= "DropDown" })
+                @Html.DropDownList("Category_ID", null, htmlAttributes: new { @class = "DropDown" })
                 <br />
                 @Html.ValidationMessageFor(model => model.Category_ID)
             </div>
@@ -31,6 +36,23 @@
                 @Html.EditorFor(model => model.Description)
                 <br />
                 @Html.ValidationMessageFor(model => model.Description)
+            </div>
+            <div>
+                @Html.LabelFor(model => model.Price)
+                <br />
+                @Html.EditorFor(model => model.Price)
+                <br />
+                @Html.ValidationMessageFor(model => model.Price)
+            </div>
+            <div>
+                @Html.LabelFor(model => model.IconPath) <small>231px X 87px </small>
+                <br />
+                <input type="file" name="icon"/>
+            </div>
+            <div>
+                @Html.LabelFor(model => model.ImagePath)
+                <br />
+                <input type="file" name="image"/>
             </div>
             <div>
                 <input type="submit" value="Ürün Ekle" />

@@ -31,6 +31,14 @@ namespace DummyBazaarWebApp.Models
         [Required(ErrorMessage = "Alan Boş Bırakılamaz")]
         public decimal Price { get; set; }
 
+        [Display(Name = "Icon")]
+        [StringLength(maximumLength: 150)]
+        public string IconPath { get; set; }
+
+        [Display(Name = "Resim")]
+        [StringLength(maximumLength: 150)]
+        public string ImagePath { get; set; }
+
         public bool IsActive { get; set; }
 
     }

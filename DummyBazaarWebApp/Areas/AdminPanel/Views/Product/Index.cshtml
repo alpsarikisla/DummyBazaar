@@ -1,0 +1,53 @@
+﻿@model IEnumerable<DummyBazaarWebApp.Models.Product>
+@{
+    ViewBag.Title = "Ürünler";
+    Layout = "~/Areas/AdminPanel/Views/Shared/_LayoutPage1.cshtml";
+}
+
+<div class="pagetitle" style="padding-left:0;">
+    <h3>Ürünler <small>Kayıtlı tüm ürünlerin listesi</small></h3>
+</div>
+<div>
+    <div style="padding-bottom:20px;">
+        <a href="@Url.Action("Create","Product")" class="createButton">Ürün ekle</a>
+    </div>
+    <table cellspacing="0" cellpadding="0" class="liste">
+        <tr>
+            <th>@Html.DisplayNameFor(model => model.IconPath)</th>
+            <th>@Html.DisplayNameFor(model => model.ID)</th>
+            <th>@Html.DisplayNameFor(model => model.Name)</th>
+            <th>@Html.DisplayNameFor(model => model.Description)</th>
+            <th>@Html.DisplayNameFor(model => model.Price)</th>
+            <th>Seçenekler</th>
+        </tr>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td width="240">
+                    <img src="~/Assets/ProductImage/@item.IconPath" height="87" />
+                </td>
+                <td>@item.ID</td>
+                <td>@item.Name</td>
+                <td>
+                    @if (item.Description.Length >= 50)
+                    {
+                        @item.Description.Substring(0, 50);
+                        <label>...</label>
+                    }
+                    else
+                    {
+                        @item.Description
+                    }
+                </td>
+                <td>
+                    @item.Price ₺
+                </td>
+                <td>
+                    <a href="@Url.Action("Edit","Product", new {id = item.ID})">Düzenle</a>
+                    <a href="@Url.Action("Delete", "Product", new {id = item.ID})">Sil</a>
+                </td>
+            </tr>
+        }
+    </table>
+</div>
+
