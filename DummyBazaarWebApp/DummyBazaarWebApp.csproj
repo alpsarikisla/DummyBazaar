@@ -99,6 +99,8 @@
   <ItemGroup>
     <Content Include="Areas\AdminPanel\Assets\Css\AdminLayout.css" />
     <Content Include="Areas\AdminPanel\Assets\Css\FormDesign.css" />
+    <Content Include="Areas\AdminPanel\Assets\Css\LoginDesign.css" />
+    <Content Include="Areas\AdminPanel\Assets\Images\bg.png" />
     <Content Include="Global.asax" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -107,7 +109,9 @@
     <Compile Include="Areas\AdminPanel\AdminPanelAreaRegistration.cs" />
     <Compile Include="Areas\AdminPanel\Controllers\CategoryController.cs" />
     <Compile Include="Areas\AdminPanel\Controllers\HomeController.cs" />
+    <Compile Include="Areas\AdminPanel\Controllers\LoginController.cs" />
     <Compile Include="Areas\AdminPanel\Controllers\ProductController.cs" />
+    <Compile Include="Areas\AdminPanel\Filters\AdminAuthenticationFilterAttribute.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -128,6 +132,7 @@
     <Content Include="Areas\AdminPanel\Views\Category\Index.cshtml" />
     <Content Include="Areas\AdminPanel\Views\Category\Edit.cshtml" />
     <Content Include="Areas\AdminPanel\Views\Product\Create.cshtml" />
+    <Content Include="Areas\AdminPanel\Views\Login\Index.cshtml" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -138,7 +143,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Areas\AdminPanel\Assets\Images\" />
     <Folder Include="Areas\AdminPanel\Assets\Js\" />
     <Folder Include="Areas\AdminPanel\Data\" />
     <Folder Include="Controllers\" />

@@ -1,4 +1,5 @@
-﻿using DummyBazaarWebApp.Models;
+﻿using DummyBazaarWebApp.Areas.AdminPanel.Filters;
+using DummyBazaarWebApp.Models;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;
@@ -8,10 +9,12 @@ using System.Web.Mvc;
 
 namespace DummyBazaarWebApp.Areas.AdminPanel.Controllers
 {
+    [AdminAuthenticationFilter]
     public class CategoryController : Controller
     {
         DummyBazaarModel db = new DummyBazaarModel();
         // GET: AdminPanel/Category
+       
         public ActionResult Index()
         {
             return View(db.Categories.ToList());
