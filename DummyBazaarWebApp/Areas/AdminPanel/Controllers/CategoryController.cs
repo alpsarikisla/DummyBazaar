@@ -21,6 +21,7 @@ namespace DummyBazaarWebApp.Areas.AdminPanel.Controllers
         }
 
         [HttpGet]
+        [ManagerTypeAuthenticationFilter]
         public ActionResult Create()
         {
             ViewBag.suleyman = "Süleyman Buradaydı";

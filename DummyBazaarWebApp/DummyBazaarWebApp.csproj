@@ -111,7 +111,9 @@
     <Compile Include="Areas\AdminPanel\Controllers\HomeController.cs" />
     <Compile Include="Areas\AdminPanel\Controllers\LoginController.cs" />
     <Compile Include="Areas\AdminPanel\Controllers\ProductController.cs" />
+    <Compile Include="Areas\AdminPanel\Controllers\YetkiYetersizController.cs" />
     <Compile Include="Areas\AdminPanel\Filters\AdminAuthenticationFilterAttribute.cs" />
+    <Compile Include="Areas\AdminPanel\Filters\ManagerTypeAuthenticationFilterAttribute.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -134,6 +136,7 @@
     <Content Include="Areas\AdminPanel\Views\Product\Create.cshtml" />
     <Content Include="Areas\AdminPanel\Views\Login\Index.cshtml" />
     <Content Include="Areas\AdminPanel\Views\Product\Index.cshtml" />
+    <Content Include="Areas\AdminPanel\Views\YetkiYetersiz\Index.cshtml" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
