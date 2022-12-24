@@ -17,14 +17,20 @@ namespace DummyBazaarWebApp.Areas.AdminPanel.Controllers
        
         public ActionResult Index()
         {
-            return View(db.Categories.ToList());
+            return View(db.Categories.OrderBy(s=> s.TopCategory_ID).ToList());
         }
 
         [HttpGet]
         [ManagerTypeAuthenticationFilter]
         public ActionResult Create()
         {
-            ViewBag.suleyman = "Süleyman Buradaydı";
+            List<SelectListItem> categories = new List<SelectListItem>();
+            categories.Add(new SelectListItem { Text = "Üst Kategori", Value = "0", Selected = true });
+            foreach (Category item in db.Categories.Where(s=> s.TopCategory_ID == null))
+            {
+                categories.Add(new SelectListItem { Text = item.Name, Value = item.ID.ToString(), Selected = false });
+            }
+            ViewBag.TopCategories = categories;
             return View();
         }
 
@@ -33,6 +39,11 @@ namespace DummyBazaarWebApp.Areas.AdminPanel.Controllers
         {
             if (ModelState.IsValid)
             {
+                if (model.TopCategory_ID == 0)
+                {
+                    model.TopCategory_ID = null;
+                }
+
                 db.Categories.Add(model);
                 db.SaveChanges();
                 return RedirectToAction("Index");

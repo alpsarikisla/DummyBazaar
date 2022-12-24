@@ -13,6 +13,7 @@
     <table cellspacing="0" cellpadding="0" class="liste">
         <tr>
             <th>@Html.DisplayNameFor(model => model.ID)</th>
+            <th>Üst Kategori</th>
             <th>@Html.DisplayNameFor(model => model.Name)</th>
             <th>@Html.DisplayNameFor(model => model.Description)</th>
             <th>Seçenekler</th>
@@ -21,6 +22,16 @@
         {
             <tr>
                 <td>@item.ID</td>
+                <td>
+                    @if (item.TopCategory_ID != null)
+                    {
+                        <label>@item.TopCategory.Name</label>
+                    }
+                    else
+                    {
+                        <label>-</label>
+                    }
+                </td>
                 <td>@item.Name</td>
                 <td>
                     @if (item.Description.Length >= 50)

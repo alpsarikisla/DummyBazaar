@@ -7,12 +7,16 @@
 <div class="form">
     <div class="formtitle">
         <h3>Kategori Ekle</h3>
-        @*@ViewBag.suleyman*@
     </div>
     <div class="formcontent">
         @using (Html.BeginForm())
         {
             @Html.AntiForgeryToken();
+            <div>
+                <label>Üst Kategori</label>
+                <br />
+                @Html.DropDownListFor(model=> model.TopCategory_ID, new SelectList(ViewBag.TopCategories, "Value", "Text"), htmlAttributes: new { @class = "DropDown" })
+            </div>
             <div>
                 @Html.LabelFor(model=> model.Name)
                 <br />

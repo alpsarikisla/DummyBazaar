@@ -8,7 +8,6 @@ using System.Web.Mvc;
 namespace DummyBazaarWebApp.Areas.AdminPanel.Controllers
 {
     [AdminAuthenticationFilter]
-
     public class HomeController : Controller
     {
         // GET: AdminPanel/Home

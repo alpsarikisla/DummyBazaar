@@ -1,4 +1,9 @@
-﻿<!DOCTYPE html>
+﻿@using DummyBazaarWebApp.Models
+@{ 
+    Manager admin = Session["adminSession"] as Manager;
+}
+
+<!DOCTYPE html>
 
 <html>
 <head>
@@ -9,13 +14,12 @@
 </head>
 <body>
     <div class="topbar DummyColorsBg-1">
-        <a href="#" class="cikis DummyColors-5">Çıkış</a>
+        <a href="@Url.Action("LogOut","Login")" class="cikis DummyColors-5">Çıkış</a>
     </div>
     <nav class="sidebar DummyColorsBg-4">
         <div class="userpanel DummyColorsBg-3 DummyColors-5">
-            <label>Merhaba <strong>Kullanıcı</strong></label><br />
-            <a href="#" class="DummyColors-5">Profil</a>  
-            <a href="#" class="DummyColors-5">Ayarlar</a>
+            <label>Merhaba <strong>@admin.Name @admin.Surname</strong></label><br />
+            <a href="#" class="DummyColors-5">Profil</a>
         </div>
         <div class="container DummyColors-3" style="background-color:white">
             <h3>Yönetici Paneli</h3>

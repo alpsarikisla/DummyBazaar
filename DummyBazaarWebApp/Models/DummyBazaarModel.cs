@@ -1,6 +1,7 @@
 using System;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Data.Entity;
+using System.Data.Entity.ModelConfiguration.Conventions;
 using System.Linq;
 
 namespace DummyBazaarWebApp.Models
@@ -20,6 +21,7 @@ namespace DummyBazaarWebApp.Models
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
+           
         }
     }
 }
