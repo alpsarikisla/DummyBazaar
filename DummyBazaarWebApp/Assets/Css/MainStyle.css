@@ -1,0 +1,117 @@
+﻿*, h1, h2, h3, h4, h5, h6 {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: #1B2838;
+    color: #C5C3C0;
+    font-family: Calibri;
+}
+
+.mainNav {
+    background-color: #171A21;
+    min-height: 100px;
+}
+
+.navContainer {
+    width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+    .navContainer .logo {
+        width: 176px;
+        float: left;
+    }
+
+    .navContainer .menu {
+        float: left;
+        list-style-type: none;
+        margin-left: 30px;
+        margin-top: 10px;
+    }
+
+        .navContainer .menu a {
+            text-decoration: none;
+        }
+
+        .navContainer .menu li {
+            color: #C5C3C0;
+            float: left;
+            text-transform: uppercase;
+            padding: 10px 15px;
+        }
+    .navContainer .loginPanel {
+        width: 250px;
+        float: right
+    }
+        .navContainer .loginPanel a {
+            float: left;
+            color: #C5C3C0;
+            margin:10px;
+            padding:3px 7px;
+            text-decoration:none;
+        }
+    .navContainer .dummyapp {
+        background-color: #5C7E10;
+        border-radius:3px;
+    }
+.mainContainer {
+    /*width: 1024px;*/
+    width: 55%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
+    min-height: 500px;
+    margin-top: 50px;
+    background-color: #171A21;
+    display: block;
+    overflow: auto;
+}
+    .mainContainer .boxheader
+    {
+        padding:15px;
+        font-size:20pt;
+        border-bottom:1px solid gray;
+        margin-bottom:10px;
+    }
+    .product {
+        width: 200px;
+        float: left;
+        margin: 5px;
+    }
+    .product .image img {
+        width:100%;
+    }
+    .product .price {
+        color:white;
+        padding:5px;
+        background-color: #171427;
+        min-height:30px;
+    }
+        .product .price div
+        {
+            float:left;
+        }
+        .product .price .oldprice {
+            padding-top: 5px;
+            padding-left: 15px;
+            color: #C5C3C0;
+            text-decoration:line-through;
+        }
+        .product .price .currentprice {
+            padding-top: 5px;
+            padding-left: 15px;
+        }
+        .product .price .discount {
+            width: 35px;
+            padding: 5px;
+            background-color: #A1CD44;
+            font-weight: 900;
+            color: #171A21;
+            text-align: center;
+            font-size: 15pt;
+        }

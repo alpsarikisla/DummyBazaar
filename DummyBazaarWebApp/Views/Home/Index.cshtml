@@ -1,0 +1,52 @@
+﻿@model IEnumerable<DummyBazaarWebApp.Models.Product>
+@using DummyBazaarWebApp.Models
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LayoutPage1.cshtml";
+    List<Product> urunler = Model as List<Product>;
+}
+<div class="boxheader">
+    En Çok Satanlar
+</div>
+@foreach (var item in Model)
+{
+   <a href="@Url.Action("Detail","Product", new { id = item.ID})">
+       <div class="product">
+           <div class="image">
+               <img src="~/Assets/ProductImage/@item.ImagePath" />
+           </div>
+           <div class="price">
+               <div class="discount">
+                   20%
+               </div>
+               <div class="oldprice">
+                   100 TL
+               </div>
+               <div class="currentprice">
+                   @item.Price TL
+               </div>
+           </div>
+       </div>
+   </a>
+}
+@*@for (int i = 0; i < urunler.Count; i++)
+{
+    Product p = urunler[i];
+    <div class="product">
+        <div class="image">
+            <img src="~/Assets/ProductImage/@p.ImagePath" />
+        </div>
+        <div class="price">
+            <div class="discount">
+                20%
+            </div>
+            <div class="oldprice">
+                100 TL
+            </div>
+            <div class="currentprice">
+                @p.Price TL
+            </div>
+        </div>
+    </div>
+}*@
+

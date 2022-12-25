@@ -101,6 +101,11 @@
     <Content Include="Areas\AdminPanel\Assets\Css\FormDesign.css" />
     <Content Include="Areas\AdminPanel\Assets\Css\LoginDesign.css" />
     <Content Include="Areas\AdminPanel\Assets\Images\bg.png" />
+    <Content Include="Assets\Css\MainStyle.css" />
+    <Content Include="Assets\PageImages\logo256.png" />
+    <Content Include="Assets\PageImages\logo_steam.svg" />
+    <Content Include="Assets\ProductImage\9ddec746-47de-4dce-b44a-fa882e720e89.jpg" />
+    <Content Include="Assets\ProductImage\b2557c04-fa3c-4116-a949-dc44aafdf98f.jpg" />
     <Content Include="Global.asax" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -114,6 +119,8 @@
     <Compile Include="Areas\AdminPanel\Controllers\YetkiYetersizController.cs" />
     <Compile Include="Areas\AdminPanel\Filters\AdminAuthenticationFilterAttribute.cs" />
     <Compile Include="Areas\AdminPanel\Filters\ManagerTypeAuthenticationFilterAttribute.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\ProductController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -138,6 +145,9 @@
     <Content Include="Areas\AdminPanel\Views\Product\Index.cshtml" />
     <Content Include="Areas\AdminPanel\Views\YetkiYetersiz\Index.cshtml" />
     <None Include="packages.config" />
+    <Content Include="Views\Shared\_LayoutPage1.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Product\Detail.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -149,8 +159,6 @@
     <Folder Include="App_Data\" />
     <Folder Include="Areas\AdminPanel\Assets\Js\" />
     <Folder Include="Areas\AdminPanel\Data\" />
-    <Folder Include="Assets\ProductImage\" />
-    <Folder Include="Controllers\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

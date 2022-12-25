@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Dummy Bazaar - @ViewBag.Title</title>
+    <link href="~/Assets/Css/MainStyle.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="mainNav">
+        <div class="navContainer">
+            @*<img src="~/Assets/PageImages/logo_steam.svg" class="logo" />*@
+            <img src="~/Assets/PageImages/logo256.png" class="logo" />
+            <ul class="menu">
+                <a href="#">
+                <li>Mağaza</li></a>
+                <a href="#">
+                <li>Topluluk</li></a>
+                <a href="#">
+                <li>Hakkında</li></a>
+                <a href="#">
+                <li>Destek</li></a>
+            </ul>
+            <div class="loginPanel">
+                <a href="#" class="dummyapp">DummyApp Yükleyin</a>
+                <a href="#">Giriş</a>
+            </div>
+        </div>
+    </div>
+    <div class="mainContainer">
+        @RenderBody()
+    </div>
+</body>
+</html>

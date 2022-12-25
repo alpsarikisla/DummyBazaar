@@ -55,6 +55,7 @@ namespace DummyBazaarWebApp.Areas.AdminPanel.Controllers
                     { 
                         model.ImagePath = "imageNone.png"; 
                     }
+                    model.IsActive = true;
                     db.Products.Add(model);
                     db.SaveChanges();
                     ViewBag.message = "Ürün Ekleme Başarılı";
