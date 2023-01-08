@@ -1,0 +1,44 @@
+﻿@model DummyBazaarWebApp.Models.Product
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LayoutPage1.cshtml";
+}
+
+
+<div>
+    <h2 class="productName"> Alışveriş Tamamla </h2>
+</div>
+<div class="PayBase">
+    <div class="leftBase">
+        <div class="paybox">
+            <img src="~/Assets/ProductImage/@Model.IconPath" />
+            <label class="productName">@Model.Name</label>
+            <span class="productPrice">@Model.Price ₺</span>
+        </div>
+        <div class="paybox">
+            <label style="float: left; margin-top: 18px;">Hesaplanan Tutar</label>
+            <span class="productPrice">@Model.Price ₺</span>
+            <div class="fixer"></div>
+            <p style="margin-top:25px;margin-bottom:35px;">
+                Bu satın alma işlemi için kart bilgilerinizi girip güvenli ödeme gerçekleştirin
+            </p>
+        </div>
+        <div class="paybox">
+            <div class="left">
+                <div>
+                    Kart Numarası<br />
+                    <input type="text" name="cartNumber" class="forminput" style="width:250px;" />
+                </div>
+            </div>
+            <div class="right"></div>
+        </div>
+    </div>
+    <div class="rightBase">
+       
+    </div>
+    <div class="fixer"></div>
+</div>
+
+
+
+

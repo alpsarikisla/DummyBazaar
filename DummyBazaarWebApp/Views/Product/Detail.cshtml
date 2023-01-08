@@ -1,8 +1,40 @@
-﻿
+﻿@model DummyBazaarWebApp.Models.Product
 @{
     ViewBag.Title = "Detail";
     Layout = "~/Views/Shared/_LayoutPage1.cshtml";
 }
 
-<h2>Detail</h2>
+<div>
+    <h2 class="productName"> @Model.Name </h2>
+</div>
+<div class="ProductBase">
+    <div class="leftBase">
+        <img src="~/Assets/ProductImage/@Model.ScreenShot" style="width:100%; height:auto"/>
+    </div>
+    <div class="rightBase">
+        <img src="~/Assets/ProductImage/@Model.ImagePath" style="width:100%; height:auto" />
+        <p style="padding-right:10px;">
+            @Model.Description
+        </p>
+    </div>
+    <div class="fixer"></div>
+</div>
+<div style="margin-top:40px;">
+    <div class="leftBase">
+        <div class="ExtraBase">
+            <div class="BuyGame ExtraBox">
+                <h2>@Model.Name Satın Alın </h2>
+            </div>
+        </div>
+        <span class="BuyBox">
+            <span style="margin-right:10px">@Model.Price ₺ </span>
+            <a href="@Url.Action("Index", "Pay", new { id = Model.ID})" class="buyButton">Satın Al</a>
+        </span>
+    </div>
+    <div class="rightBase">
+        
+    </div>
+    <div class="fixer"></div>
+</div>
+
 

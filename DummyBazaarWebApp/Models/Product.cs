@@ -39,6 +39,10 @@ namespace DummyBazaarWebApp.Models
         [StringLength(maximumLength: 150)]
         public string ImagePath { get; set; }
 
+        [Display(Name = "Resim")]
+        [StringLength(maximumLength: 150)]
+        public string ScreenShot { get; set; }
+
         public bool IsActive { get; set; }
 
     }

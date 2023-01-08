@@ -9,6 +9,14 @@ body {
     font-family: Calibri;
 }
 
+.bodybackground {
+    background: #1b2939; /* Old browsers */
+    background: -moz-linear-gradient(left, #1b2939 0%, #184150 32%, #19222e 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #1b2939 0%,#184150 32%,#19222e 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #1b2939 0%,#184150 32%,#19222e 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1b2939', endColorstr='#19222e',GradientType=1 ); /* IE6-9 */
+}
+
 .mainNav {
     background-color: #171A21;
     min-height: 100px;
@@ -44,68 +52,76 @@ body {
             text-transform: uppercase;
             padding: 10px 15px;
         }
+
     .navContainer .loginPanel {
         width: 250px;
         float: right
     }
+
         .navContainer .loginPanel a {
             float: left;
             color: #C5C3C0;
-            margin:10px;
-            padding:3px 7px;
-            text-decoration:none;
+            margin: 10px;
+            padding: 3px 7px;
+            text-decoration: none;
         }
+
     .navContainer .dummyapp {
         background-color: #5C7E10;
-        border-radius:3px;
+        border-radius: 3px;
     }
+
 .mainContainer {
     /*width: 1024px;*/
     width: 55%;
     margin-left: auto;
     margin-right: auto;
     padding: 5px;
-    min-height: 500px;
     margin-top: 50px;
-    background-color: #171A21;
     display: block;
     overflow: auto;
 }
-    .mainContainer .boxheader
-    {
-        padding:15px;
-        font-size:20pt;
-        border-bottom:1px solid gray;
-        margin-bottom:10px;
+
+    .mainContainer .boxheader {
+        padding: 15px;
+        font-size: 20pt;
+        border-bottom: 1px solid gray;
+        margin-bottom: 10px;
     }
-    .product {
-        width: 200px;
-        float: left;
-        margin: 5px;
-    }
+
+.product {
+    width: 200px;
+    float: left;
+    margin: 5px;
+}
+
     .product .image img {
-        width:100%;
+        width: 100%;
     }
+
     .product .price {
-        color:white;
-        padding:5px;
+        color: white;
+        padding: 5px;
         background-color: #171427;
-        min-height:30px;
+        min-height: 30px;
     }
-        .product .price div
-        {
-            float:left;
+
+        .product .price div {
+            float: left;
         }
+
         .product .price .oldprice {
             padding-top: 5px;
             padding-left: 15px;
             color: #C5C3C0;
-            text-decoration:line-through;
+            text-decoration: line-through;
         }
+
         .product .price .currentprice {
             padding-top: 5px;
             padding-left: 15px;
         }
+
         .product .price .discount {
             width: 35px;
             padding: 5px;
@@ -115,3 +131,147 @@ body {
             text-align: center;
             font-size: 15pt;
         }
+
+.productName {
+    color: white;
+    font-weight: 400;
+    font-size: 20pt;
+}
+
+.ProductBase {
+    background-color: #222C37;
+}
+
+.leftBase {
+    float: left;
+    width: 65%;
+}
+
+.rightBase {
+    float: right;
+    width: 33%;
+}
+
+.fixer {
+    clear: both;
+}
+
+.BuyGame {
+    border-radius: 5px;
+    padding: 15px;
+}
+
+    .BuyGame h2 {
+        color: white;
+        font-weight: 400;
+    }
+
+.BuyBox {
+    background-color: black;
+    color: white;
+    padding: 9px 7px 9px 20px;
+    float: right;
+    margin-top: -20px;
+    margin-right: 30px;
+}
+
+.buyButton {
+    background-color: #578519;
+    padding: 5px 15px;
+    color: white;
+    border-radius: 3px;
+    font-size: 12pt;
+    text-decoration: none;
+}
+
+.ExtraBox {
+    background: #2b3b4a; /* Old browsers */
+    background: -moz-linear-gradient(left, #2b3b4a 0%, #556372 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #2b3b4a 0%,#556372 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #2b3b4a 0%,#556372 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2b3b4a', endColorstr='#556372',GradientType=1 ); /* IE6-9 */
+}
+
+.subnav {
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#3e6796+0,0f216e+100 */
+    background: #3e6796; /* Old browsers */
+    background: -moz-linear-gradient(left, #3e6796 0%, #0f216e 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #3e6796 0%,#0f216e 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #3e6796 0%,#0f216e 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3e6796', endColorstr='#0f216e',GradientType=1 ); /* IE6-9 */
+    min-height: 33px;
+}
+
+    .subnav ul {
+        list-style-type: none;
+    }
+
+        .subnav ul a {
+            color: white;
+        }
+
+        .subnav ul li {
+            float: left;
+            padding: 7px 15px;
+        }
+
+        .subnav ul a:hover li {
+            background-color: #296BA3;
+        }
+
+.searchbox {
+    margin-top: 2px;
+    width: 150px;
+    padding: 5px;
+    border: 1px solid #296BA3;
+    border-radius: 5px;
+    background-color: #316282;
+}
+
+.SearchButton {
+    background-color: #4C9ACC;
+    padding: 2px;
+    border-radius: 5px;
+    margin-left: -30px;
+    margin-top: 3px;
+}
+
+    .SearchButton img {
+        margin-bottom: -5px;
+        width: 18px;
+    }
+.PayBase {
+   
+}
+.paybox {
+    background-color: #16202D;
+    padding: 10px;
+    min-height: 70px;
+    margin-top:10px;
+}
+
+    .paybox img {
+        width: 150px;
+        float: left
+    }
+
+    .paybox .productName {
+        float: left;
+        margin-top: 18px;
+        margin-left: 15px;
+    }
+
+    .paybox .productPrice {
+        float: right;
+        margin-top: 18px;
+    }
+    .paybox .left{
+
+    }
+    .paybox .right {
+    }
+.forminput{
+    padding:7px;
+    border:1px solid #3e6796;
+    background-color:#19222e;
+}
