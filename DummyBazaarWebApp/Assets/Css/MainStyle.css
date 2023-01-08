@@ -266,12 +266,35 @@ body {
         margin-top: 18px;
     }
     .paybox .left{
-
+        float:left;
+        width:320px;
     }
     .paybox .right {
+        float: right;
+        width: 320px;
     }
 .forminput{
     padding:7px;
     border:1px solid #3e6796;
     background-color:#19222e;
+    color:white;
 }
+.row
+{
+    margin-bottom:15px;
+}
+.payButton {
+    background-color: #578519;
+    padding: 5px 15px;
+    color: white;
+    border-radius: 3px;
+    font-size: 12pt;
+    text-decoration: none;
+    border:1px solid #578519;
+    width:265px;
+}
+    .payButton:hover {
+        background-color: #417002;
+        border: 1px solid #417002;
+        cursor: pointer;
+    }
