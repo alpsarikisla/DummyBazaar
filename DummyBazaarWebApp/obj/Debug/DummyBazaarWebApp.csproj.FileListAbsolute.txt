@@ -150,3 +150,11 @@ C:\Users\303\Documents\GitHub\DummyBazaar\DummyBazaarWebApp\obj\Debug\DummyBazaa
 C:\Users\303\Documents\GitHub\DummyBazaar\DummyBazaarWebApp\obj\Debug\DummyBazaarWebApp.csproj.CopyComplete
 C:\Users\303\Documents\GitHub\DummyBazaar\DummyBazaarWebApp\obj\Debug\DummyBazaarWebApp.dll
 C:\Users\303\Documents\GitHub\DummyBazaar\DummyBazaarWebApp\obj\Debug\DummyBazaarWebApp.pdb
+C:\Users\303\Documents\GitHub\DummyBazaar\DummyBazaarWebApp\bin\Newtonsoft.Json.dll
+C:\Users\303\Documents\GitHub\DummyBazaar\DummyBazaarWebApp\bin\System.Net.Http.Formatting.dll
+C:\Users\303\Documents\GitHub\DummyBazaar\DummyBazaarWebApp\bin\System.Web.Http.dll
+C:\Users\303\Documents\GitHub\DummyBazaar\DummyBazaarWebApp\bin\System.Web.Http.WebHost.dll
+C:\Users\303\Documents\GitHub\DummyBazaar\DummyBazaarWebApp\bin\Newtonsoft.Json.xml
+C:\Users\303\Documents\GitHub\DummyBazaar\DummyBazaarWebApp\bin\System.Net.Http.Formatting.xml
+C:\Users\303\Documents\GitHub\DummyBazaar\DummyBazaarWebApp\bin\System.Web.Http.xml
+C:\Users\303\Documents\GitHub\DummyBazaar\DummyBazaarWebApp\bin\System.Web.Http.WebHost.xml
